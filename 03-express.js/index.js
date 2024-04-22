@@ -33,6 +33,10 @@ const auth = (req, res, next) => {
 }
 
 
+// we have 3 options tosend data in server
+// query parameter localhost:8000?id=1234  req.query.id = 1234
+// params localhost:8000/user/:id const id = req.params.id
+// body paarameter 
 
 app.get('/',auth, (req, res) => {
     //res.send('hello')
